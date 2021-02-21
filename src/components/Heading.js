@@ -4,13 +4,13 @@ import { Navbar, Nav, NavItem, NavbarBrand, Container } from "reactstrap";
 
 const Heading = () => {
   return (
-    <Navbar color="light" light>
+    <Navbar color="dark" dark>
       <Container>
-        <NavbarBrand href="/">Enter a user</NavbarBrand>
+        <NavbarBrand href="/">My Team</NavbarBrand>
         <Nav>
           <NavItem>
-            <Link className="btn btn-primary" to="adduser">
-              Add user
+            <Link className="btn btn-primary" to="/adduser">
+              Add User
             </Link>
           </NavItem>
         </Nav>
