@@ -21,7 +21,7 @@ const EditUser = (props) => {
   const onSubmit = (e) => {
     e.preventDefault();
     editUser(selectedUser);
-    history.push("/home");
+    history.push("/");
   };
 
   const onChange = (e) => {
@@ -41,7 +41,7 @@ const EditUser = (props) => {
         ></Input>
       </FormGroup>
       <Button type="submit">Edit</Button>
-      <Link to="/home" className="btn btn-danger ml-2">
+      <Link to="/" className="btn btn-danger ml-2">
         Cancel
       </Link>
     </Form>

@@ -16,7 +16,7 @@ const AddUser = () => {
       name: name,
     };
     addUser(newUser);
-    history.push("/home");
+    history.push("/");
   };
 
   const onChange = (e) => {
@@ -34,7 +34,7 @@ const AddUser = () => {
         ></Input>
       </FormGroup>
       <Button type="submit">Submit</Button>
-      <Link to="/home" className="btn btn-danger ml-2">
+      <Link to="/" className="btn btn-danger ml-2">
         Cancel
       </Link>
     </Form>

@@ -6,7 +6,7 @@ const Heading = () => {
   return (
     <Navbar color="light" light>
       <Container>
-        <NavbarBrand href="/home">Enter a user</NavbarBrand>
+        <NavbarBrand href="/">Enter a user</NavbarBrand>
         <Nav>
           <NavItem>
             <Link className="btn btn-primary" to="adduser">
