@@ -10,7 +10,7 @@ const Heading = () => {
         <Nav>
           <NavItem>
             <Link className="btn btn-info" to="/adduser">
-              Add User
+              Add Your Favorite Character ✨
             </Link>
           </NavItem>
         </Nav>
