@@ -11,17 +11,22 @@ const AddUser = () => {
 
   const onSubmit = (e) => {
     e.preventDefault();
-    const newUser = {
-      id: uuid(),
-      name: name,
-    };
-    addUser(newUser);
-    history.push("/");
+    if (name) {
+      const newUser = {
+        id: uuid(),
+        name: name,
+      };
+      addUser(newUser);
+      history.push("/");
+    } else {
+      alert("No name added. Please add a name.");
+    }
   };
 
   const onChange = (e) => {
     setName(e.target.value);
   };
+
   return (
     <Form onSubmit={onSubmit}>
       <FormGroup>
@@ -33,7 +38,9 @@ const AddUser = () => {
           placeholder="name"
         ></Input>
       </FormGroup>
-      <Button type="submit">Submit</Button>
+      <Button className="btn btn-info" type="submit">
+        Submit
+      </Button>
       <Link to="/" className="btn btn-danger ml-2">
         Cancel
       </Link>

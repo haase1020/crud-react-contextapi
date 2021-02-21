@@ -40,7 +40,9 @@ const EditUser = (props) => {
           required
         ></Input>
       </FormGroup>
-      <Button type="submit">Edit</Button>
+      <Button className="btn btn-info" type="submit">
+        Save Changes
+      </Button>
       <Link to="/" className="btn btn-danger ml-2">
         Cancel
       </Link>

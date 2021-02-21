@@ -12,7 +12,7 @@ function App() {
       <GlobalProvider>
         <Router>
           <Switch>
-            <Route path="/" component={Home} />
+            <Route exact path="/" component={Home} />
             <Route path="/adduser" component={AddUser} />
             <Route path="/edit/:id" component={EditUser} />
           </Switch>
